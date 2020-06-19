@@ -1,0 +1,20 @@
+{
+    "name": "image-distort",
+    "version": "1.0.0",
+    "description": "An simple express API that distort the image input",
+    "main": "index.js",
+    "repository": "https://github.com/Giancarl021/Image-Distort.git",
+    "author": "Giancarlo Fontela da Luz <gian.f.luz@hotmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "multer": "^1.4.2"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0"
+    }
+}
