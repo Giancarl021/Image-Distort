@@ -5,11 +5,8 @@ const multerConfig = require('./config/multer');
 const routes = express.Router();
 
 const upload = multer(multerConfig);
+const DistortController = require('./controllers/DistortController');
 
-routes.get('/upload', upload.single('image'), (req, res) => {
-    return res.json({
-        message: 'Image uploaded'
-    });
-});
+routes.get('/distort', upload.single('image'), DistortController);
 
 module.exports = routes;
